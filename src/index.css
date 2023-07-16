@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  /* font-family: monserat; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./images/background.jpg');
+}
+
+ul {
+  list-style: none;
+}
