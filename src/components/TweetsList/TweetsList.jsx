@@ -18,7 +18,7 @@ export const TweetsList = () => {
       setTweets(response.data.tweets);
     }
     fetch();
-  }, []);
+  }, [value]);
 
   return (
     <>

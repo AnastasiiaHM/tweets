@@ -15,7 +15,7 @@ import {
 
 import LogoPicture from '../../images/Logogoit.png';
 import hero from '../../images/picture2 1card.png';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { UpdateUserFollow } from 'components/API';
 import { useLocation } from 'react-router-dom';
 
@@ -38,7 +38,7 @@ export const Card = ({
     setQuantity(newQuantity);
     setFollow(true);
     async function fetch() {
-      const updateUser = await UpdateUserFollow(id, {
+      await UpdateUserFollow(id, {
         followers: newQuantity,
         following: true,
       });
