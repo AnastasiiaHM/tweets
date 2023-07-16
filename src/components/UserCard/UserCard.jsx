@@ -32,7 +32,7 @@ export const Card = ({
 
   const location = useLocation();
 
-  const handleFollowing = e => {
+  const handleFollowing = () => {
     updateList(id);
     const newQuantity = Number(quantity) + 1;
     setQuantity(newQuantity);
