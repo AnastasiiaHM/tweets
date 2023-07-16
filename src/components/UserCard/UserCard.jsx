@@ -51,7 +51,7 @@ export const Card = ({
     setQuantity(newQuantity);
     setFollow(false);
     async function fetch() {
-      const updateUser = await UpdateUserFollow(id, {
+      await UpdateUserFollow(id, {
         followers: newQuantity,
         following: false,
       });
