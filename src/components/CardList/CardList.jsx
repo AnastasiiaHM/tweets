@@ -36,7 +36,7 @@ export const CardList = () => {
       case 'Follow':
         const follow = originalList.filter(item => item.following === true);
         setList(follow);
-        console.log(followings);
+
         break;
       case 'Followings':
         const followings = originalList.filter(
